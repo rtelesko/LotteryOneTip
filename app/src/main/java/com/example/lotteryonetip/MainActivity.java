@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i + 1; j < numbers.length; j++) {
                 if (numbers[i] == numbers[j])
-                    return false;  // Got a duplicate element: Not valid
+                    return false;  // Not valid: Got a duplicate element
             }
         }
         return true; // Valid tip
