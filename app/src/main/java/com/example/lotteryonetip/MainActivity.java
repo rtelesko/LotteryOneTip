@@ -57,13 +57,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Check for duplicates in array
     private boolean validationCheck(int[] numbers) {
-        boolean valid = true;   // initial setting
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i + 1; j < numbers.length; j++) {
                 if (numbers[i] == numbers[j])
-                    valid = false;  // got a duplicate element
+                    return false;  // Got a duplicate element: Not valid
             }
         }
-        return valid;
+        return true; // Valid tip
     }
 }
