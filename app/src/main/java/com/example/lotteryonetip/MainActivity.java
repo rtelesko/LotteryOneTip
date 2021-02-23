@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     tvValidation.setText("Validation OK");
                 } else {
                     tvValidation.setTextColor(new Color().parseColor("#FF0000"));
-                    tvValidation.setText("Validation NOT OK - Please may a new try!");
+                    tvValidation.setText("Validation NOT OK - Please make a new try!");
                 }
             }
         });
